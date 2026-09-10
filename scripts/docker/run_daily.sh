@@ -167,7 +167,7 @@ fi
 
 # Random sleep between MIN and MAX to spread execution
 MINWAIT=${MIN_SLEEP_MINUTES:-5}
-MAXWAIT=${MAX_SLEEP_MINUTES:-50}
+MAXWAIT=${MAX_SLEEP_MINUTES:-9}
 
 if ! is_nonnegative_integer "$MINWAIT" || ! is_nonnegative_integer "$MAXWAIT"; then
     echo "[$(date)] [run_daily.sh] ERROR: MIN_SLEEP_MINUTES and MAX_SLEEP_MINUTES must be non-negative integers." >&2
