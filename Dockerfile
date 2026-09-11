@@ -110,5 +110,5 @@ COPY --chmod=644 src/crontab.template /etc/cron.d/microsoft-rewards-cron.templat
 COPY --chmod=755 scripts/docker/entrypoint.sh /usr/local/bin/entrypoint.sh
 
 # Entrypoint handles TZ, accounts/config generation, initial run toggle,
-# cron templating & launch, or API server startup when API_MODE=true
+# cron templating & launch, or API server startup when API_MODE
 ENTRYPOINT ["./scripts/docker/run_daily.sh"]
